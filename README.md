@@ -7,7 +7,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**一次去重后，once数据列表可以保留作为数据总列表，而twice数据列表可被新的一批数据覆盖，这样就可以实现重复去重**
 
-![image](https://img.wenhairu.com/image/EGByH)
+![image](https://img.wenhairu.com/images/2021/02/25/EGByH.md.png)
 #### 2.主要方法
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）网页数据定位方法：selenium浏览器对象访问指定直播间url，返回页面源码，再使用xpath定位对应html标签。
 
