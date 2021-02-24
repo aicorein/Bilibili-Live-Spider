@@ -40,3 +40,8 @@ bro = webdriver.Chrome('C:/Users/15742/chromedriver.exe', chrome_options = chrom
 
 #### 2.使用封装的exe应用程序
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;realease尚未发布ヽ(￣▽￣)ﾉ
+
+## 三、声明
+#### 1.该项目遵守MIT协议
+#### 2.请勿滥用，本项目仅用于学习和测试！
+#### 3.由于使用本项目造成的不良影响和后果与本人无关
