@@ -1,4 +1,4 @@
-# bilibili-Bilibili-Live-Spider
+# Bilibili-Live-Spider
 ### 一、实现原理：
 #### 1.核心：数据去重
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;直播间网页页面弹幕和礼物数据容量有限，且这些数据处于不断增长中，超过一定量后，将会发生滚动覆盖。
