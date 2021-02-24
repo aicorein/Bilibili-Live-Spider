@@ -2,11 +2,12 @@
 ### 一、实现原理：
 #### 1.核心：数据去重
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;直播间网页页面弹幕和礼物数据容量有限，且这些数据处于不断增长中，超过一定量后，将会发生滚动覆盖。
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;程序每隔一段时间读取一次页面数据，若页面数据仍在容量内，则两次获取数据会有部分重复。若页面数据已经开始滚动，则两次获取数据在位置上会发生错位。因此每获取一次数据就需要进行一次去重。 **去重原理如下图：（在twice数据列表中寻找与once数据列表相同的元素，扩展once数据列表。）**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**一次去重后，once数据列表可以保留作为数据总列表，而twice数据列表可被新的一批数据覆盖，这样就可以实现重复去重**
 
-![image](https://github.com/AiCorein/bilibili-Bilibili-Live-Spider/blob/main/img/remove_repeat.png)
+![image](https://img.wenhairu.com/image/EGByH)
 #### 2.主要方法
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）网页数据定位方法：selenium浏览器对象访问指定直播间url，返回页面源码，再使用xpath定位对应html标签。
 
