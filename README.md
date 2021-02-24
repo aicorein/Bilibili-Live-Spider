@@ -39,5 +39,4 @@ bro = webdriver.Chrome('C:/Users/15742/chromedriver.exe', chrome_options = chrom
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（5）建议：建议在控制台运行该py源码，因为其清理输出依赖于cmd
 
 #### 2.使用封装的exe应用程序
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;realease尚未发布，可能后续会考虑
-ヽ(￣▽￣)ﾉ
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;realease尚未发布ヽ(￣▽￣)ﾉ
