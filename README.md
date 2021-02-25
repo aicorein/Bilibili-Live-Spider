@@ -28,11 +28,20 @@
 pip install selenium
 pip install lxml
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）下载浏览器驱动（驱动与浏览器版本一定要对应）：参考 [爬虫利器selenium和浏览器驱动安装教程](https://blog.csdn.net/qq_44032277/article/details/105793873)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（2）下载浏览器驱动（驱动与浏览器版本一定要对应）(浏览器推荐使用Firefox和Chrome）：参考 [爬虫利器selenium和浏览器驱动安装教程](https://blog.csdn.net/qq_44032277/article/details/105793873)
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）修改浏览器驱动路径：浏览器驱动下载后，请修改该条源代码的路径参数为你自己的浏览器驱动路径（我的驱动是chromedriver）
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（3）修改浏览器驱动路径及配置：
 ```python
-bro = webdriver.Chrome('C:/Users/15742/chromedriver.exe', chrome_options = chrome_options)
+# 如果使用的浏览器是chrome，第97行代码改为：
+bro = webdriver.Chrome('你的驱动路径', chrome_options = chrome_options)
+```
+```python
+# 如果使用的浏览器是firefox，删除4行，改为：
+from selenium.webdriver.firefox.options import Options
+# 删除94-97行，改为：
+ff_options = Options()
+ff_options.add_argument('-headless')
+bro = webdriver.Firefox('你的驱动路径', firefox_options = ff_options)
 ```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（4）运行提示：程序在发送请求获取数据时可能因网络不稳定而报错，此时等待其快速重连即可，一般不会影响程序运行。
