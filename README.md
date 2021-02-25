@@ -27,7 +27,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（6）数据存储：当数据缓存量大于最大缓存量写入csv一次，并清空数据缓存，避免大量数据堆积。
 
 ## 三、使用注意事项
-#### 1.使用python源码
+#### 1.python环境下直接运行
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）模块依赖安装：
 ```shell
 pip install selenium
