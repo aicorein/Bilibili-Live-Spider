@@ -1,5 +1,10 @@
 # Bilibili-Live-Spider
-### 一、实现原理：
+## 一、声明
+#### 1.该项目遵守MIT协议。
+#### 2.请勿滥用，本项目仅用于学习和测试！
+#### 3.由于使用本项目造成的不良影响和后果与本人无关！
+
+### 二、实现原理：
 #### 1.核心：数据去重
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;直播间网页页面可容纳的弹幕和礼物数据是有限的，且这些数据不断地在更新增加，超过一定量后，将会发生滚动覆盖。
 
@@ -21,7 +26,7 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（6）数据存储：当数据缓存量大于最大缓存量写入csv一次，并清空数据缓存，避免大量数据堆积。
 
-## 二、使用注意事项
+## 三、使用注意事项
 #### 1.使用python源码
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（1）模块依赖安装：
 ```shell
@@ -49,9 +54,4 @@ bro = webdriver.Firefox('你的驱动路径', firefox_options = ff_options)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（5）建议：建议在控制台运行该py源码，因为其清理输出依赖于cmd
 
 #### 2.使用封装的exe应用程序
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;realease尚未发布ヽ(￣▽￣)ﾉ
-
-## 三、声明
-#### 1.该项目遵守MIT协议。
-#### 2.请勿滥用，本项目仅用于学习和测试！
-#### 3.由于使用本项目造成的不良影响和后果与本人无关！
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;realease尚未发布
